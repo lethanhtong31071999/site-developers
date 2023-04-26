@@ -4,5 +4,9 @@
 @tailwind utilities;
 
 body {
-  @apply min-h-screen bg-gradient-to-b from-darkBlue-500 to-darkBlue-100;
+  @apply min-h-screen bg-gradient-to-t from-darkBlue-500 to-darkBlue-100;
+}
+
+header nav .active {
+  @apply text-green-300;
 }
