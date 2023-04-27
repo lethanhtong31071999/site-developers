@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/x-icon" href="./public/images/logo.svg" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css"
+    />
     <link href="./public/output.css" rel="stylesheet" />
 
     <title>Site Developers</title>
@@ -13,7 +17,7 @@
     <div id="wrapper" class="flex flex-col">
       <header id="header">
         <nav
-          class="flex justify-between items-center p-6 md:p-8 container mx-auto"
+          class="flex justify-between items-center p-6 md:p-8 md:container mx-auto"
         >
           <div>
             <a
@@ -35,7 +39,7 @@
             <li class="mx-2 md:mx-4 hover:scale-105 transition-transform">
               <a
                 href="#"
-                class="text-base sm:text-xl font-bold font-Popin text-white hover:text-[#f97316] leading-none"
+                class="text-base sm:text-xl font-bold font-Popin text-white hover:text-ct-orange leading-none"
               >
                 Microservices
               </a>
@@ -45,13 +49,13 @@
             >
               <a
                 href="#"
-                class="uppercase hidden md:inline-block px-4 py-2 text-xl font-bold font-Popin text-white hover:text-white hover:bg-[#f97316] bg-purple-600 drop-shadow-md hover:scale-105 transition-all duration-300"
+                class="uppercase hidden md:inline-block px-4 py-2 text-xl font-bold font-Popin text-white hover:text-white hover:bg-ct-orange bg-purple-600 drop-shadow-md hover:scale-105 transition-all duration-300"
               >
                 Order Lunch
               </a>
               <a
                 href="#"
-                class="inline-block md:hidden text-white hover:text-green-300 text-base sm:text-xl font-bold font-Popin leading-none"
+                class="inline-block md:hidden text-white hover:text-ct-orange text-base sm:text-xl font-bold font-Popin leading-none"
               >
                 Order
               </a>
@@ -76,14 +80,25 @@
           class="mx-auto w-24 h-1 my-12 bg-gradient-to-r from-gray-500 to-gray-400 rounded-full"
         ></div>
         <!-- Cards -->
-        <ul class="flex flex-wrap items-stretch justify-start">
+        <ul
+          class="flex flex-wrap items-stretch justify-start p-2 lg:p-1 -mx-4 lg:-mx-6"
+        >
           <li
-            class="list-none p-4 lg:p-6 w-full md:w-[50%] lg:w-[33%] xl:w-[25%]"
+            class="list-none p-4 lg:p-6 w-full md:w-[50%] lg:w-[33%] xl:w-[25%] card-item"
           >
             <article
               class="w-full overflow-hidden shadow-xl bg-gray-600 y-6 hover:scale-105 rounded-xl transition-transform ease-in-out duration-500"
             >
-              <a href="#" class="no-underline">
+              <a
+                class="no-underline"
+                data-te-collapse-init
+                data-te-ripple-init
+                data-te-ripple-color="primary"
+                data-te-target="#roy-le-section"
+                role="button"
+                aria-expanded="false"
+                href="#roy-le-section"
+              >
                 <img
                   src="https://fireship.io/courses/supabase/img/featured.webp"
                   alt="card"
@@ -106,7 +121,7 @@
             </article>
           </li>
           <li
-            class="list-none p-4 lg:p-6 w-full md:w-[50%] lg:w-[33%] xl:w-[25%]"
+            class="list-none p-4 lg:p-6 w-full md:w-[50%] lg:w-[33%] xl:w-[25%] card-item"
           >
             <article
               class="w-full overflow-hidden shadow-xl bg-gray-600 y-6 hover:scale-105 rounded-xl transition-transform ease-in-out duration-500"
@@ -134,7 +149,7 @@
             </article>
           </li>
           <li
-            class="list-none p-4 lg:p-6 w-full md:w-[50%] lg:w-[33%] xl:w-[25%]"
+            class="list-none p-4 lg:p-6 w-full md:w-[50%] lg:w-[33%] xl:w-[25%] card-item"
           >
             <article
               class="w-full overflow-hidden shadow-xl bg-gray-600 y-6 hover:scale-105 rounded-xl transition-transform ease-in-out duration-500"
@@ -162,7 +177,7 @@
             </article>
           </li>
           <li
-            class="list-none p-4 lg:p-6 w-full md:w-[50%] lg:w-[33%] xl:w-[25%]"
+            class="list-none p-4 lg:p-6 w-full md:w-[50%] lg:w-[33%] xl:w-[25%] card-item"
           >
             <article
               class="w-full overflow-hidden shadow-xl bg-gray-600 y-6 hover:scale-105 rounded-xl transition-transform ease-in-out duration-500"
@@ -190,7 +205,48 @@
             </article>
           </li>
         </ul>
+
+        <!-- Collapses -->
+        <div
+          class="!visible px-1 hidden transition-all"
+          id="roy-le-section"
+          data-te-collapse-item
+        >
+          <div
+            class="block rounded-lg bg-gradient-to-t from-[#203A43] to-[#2C5364] p-6 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700 dark:text-neutral-50"
+          >
+            <li
+              class="list-none p-4 lg:p-6 w-full md:w-[50%] lg:w-[33%] xl:w-[25%]"
+            >
+              <article
+                class="w-full overflow-hidden shadow-xl bg-gray-600 y-6 hover:scale-105 rounded-xl transition-transform ease-in-out duration-500"
+              >
+                <a href="#" class="no-underline">
+                  <img
+                    src="https://fireship.io/courses/react-next-firebase/img/featured.webp"
+                    alt="card"
+                    class="w-full"
+                  />
+                  <div class="p-5">
+                    <h5
+                      class="text-white font-extrabold uppercase text-center text-2xl"
+                    >
+                      Rosie Ngo
+                    </h5>
+                    <p
+                      class="text-gray-300 min-h-[100px] font-semibold text-center"
+                    >
+                      Build and deploy a full-stack, production-ready web app
+                      with Supabase, React, and Postgres.
+                    </p>
+                  </div>
+                </a>
+              </article>
+            </li>
+          </div>
+        </div>
       </main>
+      <!-- Footer -->
       <footer id="footer">
         <footer class="container mx-auto text-center my-6 p-8 text-gray-300">
           <div
@@ -289,6 +345,7 @@
         </footer>
       </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
     <script src="./public/js/main.js"></script>
   </body>
 </html>

@@ -10,3 +10,9 @@ body {
 header nav .active {
   @apply text-green-300;
 }
+
+#main ul .card-item:not(.active) article {
+}
+
+#main ul .card-item.active article {
+}
