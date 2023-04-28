@@ -12,7 +12,13 @@ header nav .active {
 }
 
 #main ul .card-item:not(.active) article {
+  @apply opacity-25 hover:opacity-80;
 }
 
-#main ul .card-item.active article {
+#main ul:not(.active) .card-item article {
+  @apply !opacity-100;
+}
+
+.ct-logo-clubs {
+  @apply w-[100px] aspect-square object-cover object-center;
 }

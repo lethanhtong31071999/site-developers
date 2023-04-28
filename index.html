@@ -81,10 +81,10 @@
         ></div>
         <!-- Cards -->
         <ul
-          class="flex flex-wrap items-stretch justify-start p-2 lg:p-1 -mx-4 lg:-mx-6"
+          class="flex flex-wrap items-stretch justify-start p-2 lg:p-1 -mx-4 lg:-mx-6 card-list"
         >
           <li
-            class="list-none p-4 lg:p-6 w-full md:w-[50%] lg:w-[33%] xl:w-[25%] card-item"
+            class="list-none p-4 sm:p-6 lg:p-8 w-full md:w-[50%] lg:w-[33%] xl:w-[25%] card-item"
           >
             <article
               class="w-full overflow-hidden shadow-xl bg-gray-600 y-6 hover:scale-105 rounded-xl transition-transform ease-in-out duration-500"
@@ -121,12 +121,20 @@
             </article>
           </li>
           <li
-            class="list-none p-4 lg:p-6 w-full md:w-[50%] lg:w-[33%] xl:w-[25%] card-item"
+            class="list-none p-4 sm:p-6 lg:p-8 w-full md:w-[50%] lg:w-[33%] xl:w-[25%] card-item"
           >
             <article
               class="w-full overflow-hidden shadow-xl bg-gray-600 y-6 hover:scale-105 rounded-xl transition-transform ease-in-out duration-500"
             >
-              <a href="#" class="no-underline">
+              <a
+                class="no-underline"
+                data-te-collapse-init
+                data-te-ripple-init
+                data-te-ripple-color="primary"
+                role="button"
+                aria-expanded="false"
+                href="#sugar-tran-section"
+              >
                 <img
                   src="https://fireship.io/courses/flutter-firebase/img/featured.webp"
                   alt="card"
@@ -149,12 +157,20 @@
             </article>
           </li>
           <li
-            class="list-none p-4 lg:p-6 w-full md:w-[50%] lg:w-[33%] xl:w-[25%] card-item"
+            class="list-none p-4 sm:p-6 lg:p-8 w-full md:w-[50%] lg:w-[33%] xl:w-[25%] card-item"
           >
             <article
               class="w-full overflow-hidden shadow-xl bg-gray-600 y-6 hover:scale-105 rounded-xl transition-transform ease-in-out duration-500"
             >
-              <a href="#" class="no-underline">
+              <a
+                class="no-underline"
+                data-te-collapse-init
+                data-te-ripple-init
+                data-te-ripple-color="primary"
+                role="button"
+                aria-expanded="false"
+                href="#james-truong-section"
+              >
                 <img
                   src="https://fireship.io/courses/js/img/featured.webp"
                   alt="card"
@@ -177,12 +193,20 @@
             </article>
           </li>
           <li
-            class="list-none p-4 lg:p-6 w-full md:w-[50%] lg:w-[33%] xl:w-[25%] card-item"
+            class="list-none p-4 sm:p-6 lg:p-8 w-full md:w-[50%] lg:w-[33%] xl:w-[25%] card-item"
           >
             <article
               class="w-full overflow-hidden shadow-xl bg-gray-600 y-6 hover:scale-105 rounded-xl transition-transform ease-in-out duration-500"
             >
-              <a href="#" class="no-underline">
+              <a
+                class="no-underline"
+                data-te-collapse-init
+                data-te-ripple-init
+                data-te-ripple-color="primary"
+                role="button"
+                aria-expanded="false"
+                href="#rosie-ngo-section"
+              >
                 <img
                   src="https://fireship.io/courses/react-next-firebase/img/featured.webp"
                   alt="card"
@@ -207,42 +231,238 @@
         </ul>
 
         <!-- Collapses -->
+        <!-- Roy -->
         <div
           class="!visible px-1 hidden transition-all"
           id="roy-le-section"
           data-te-collapse-item
         >
           <div
-            class="block rounded-lg bg-gradient-to-t from-[#203A43] to-[#2C5364] p-6 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700 dark:text-neutral-50"
+            class="p-1 block rounded-lg bg-gradient-to-r from-gray-500 to-gray-600 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700 dark:text-neutral-50"
           >
-            <li
-              class="list-none p-4 lg:p-6 w-full md:w-[50%] lg:w-[33%] xl:w-[25%]"
-            >
-              <article
-                class="w-full overflow-hidden shadow-xl bg-gray-600 y-6 hover:scale-105 rounded-xl transition-transform ease-in-out duration-500"
-              >
-                <a href="#" class="no-underline">
-                  <img
-                    src="https://fireship.io/courses/react-next-firebase/img/featured.webp"
-                    alt="card"
-                    class="w-full"
-                  />
-                  <div class="p-5">
-                    <h5
-                      class="text-white font-extrabold uppercase text-center text-2xl"
-                    >
-                      Rosie Ngo
-                    </h5>
-                    <p
-                      class="text-gray-300 min-h-[100px] font-semibold text-center"
-                    >
-                      Build and deploy a full-stack, production-ready web app
-                      with Supabase, React, and Postgres.
-                    </p>
+            <ul class="flex flex-wrap">
+              <li class="list-none p-2 md:p-4 w-full sm:w-[50%] lg:w-[33%]">
+                <a
+                  href="http://sites.tpfonline.com.au/"
+                  title="http://sites.tpfonline.com.au/"
+                  target="_blank"
+                  class="block no-underline hover:opacity-90"
+                >
+                  <div
+                    class="px-2 py-4 md:px-4 md:py-6 flex justify-start items-center gap-4 rounded-lg drop-shadow-md md:max-w-xl md:flex-row bg-gradient-to-t from-darkBlue-500 to-darkBlue-100"
+                  >
+                    <img
+                      class="rounded-t-lg md:rounded-none ct-logo-clubs"
+                      src="./public/images/mberplus.png"
+                      alt="site tpf"
+                    />
+                    <div class="flex flex-col justify-start">
+                      <h5 class="mb-2 text-xl font-semibold text-white">
+                        Sites TPF
+                      </h5>
+                      <p class="text-sm text-secondary">
+                        sites.tpfonline.com.au/
+                      </p>
+                    </div>
                   </div>
                 </a>
-              </article>
-            </li>
+              </li>
+              <li class="list-none p-2 md:p-4 w-full sm:w-[50%] lg:w-[33%]">
+                <a
+                  href="dev-club-roy.tpfonline.com.au"
+                  title="dev-club-roy.tpfonline.com.au"
+                  target="_blank"
+                  class="block no-underline hover:opacity-90"
+                >
+                  <div
+                    class="px-2 py-4 md:px-4 md:py-6 flex justify-start items-center gap-4 rounded-lg drop-shadow-md md:max-w-xl md:flex-row bg-gradient-to-t from-darkBlue-500 to-darkBlue-100"
+                  >
+                    <img
+                      class="rounded-t-lg md:rounded-none ct-logo-clubs"
+                      src="./public/images/bull-dog.png"
+                      alt="bull dog"
+                    />
+                    <div class="flex flex-col justify-start">
+                      <h5 class="mb-2 text-xl font-semibold text-white">
+                        Bull Dog
+                      </h5>
+                      <p class="text-sm text-secondary">
+                        dev-club-roy.tpfonline.com.au
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Sugar -->
+        <div
+          class="!visible px-1 hidden transition-all"
+          id="sugar-tran-section"
+          data-te-collapse-item
+        >
+          <div
+            class="p-1 block rounded-lg bg-gradient-to-r from-gray-500 to-gray-600 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700 dark:text-neutral-50"
+          >
+            <ul class="flex flex-wrap">
+              <li class="list-none p-2 md:p-4 w-full sm:w-[50%] lg:w-[33%]">
+                <a
+                  href="http://sites.tpfonline.com.au/"
+                  title="http://sites.tpfonline.com.au/"
+                  target="_blank"
+                  class="block no-underline hover:opacity-90"
+                >
+                  <div
+                    class="px-2 py-4 md:px-4 md:py-6 flex justify-start items-center gap-4 rounded-lg drop-shadow-md md:max-w-xl md:flex-row bg-gradient-to-t from-darkBlue-500 to-darkBlue-100"
+                  >
+                    <img
+                      class="rounded-t-lg md:rounded-none ct-logo-clubs"
+                      src="./public/images/mberplus.png"
+                      alt="site tpf"
+                    />
+                    <div class="flex flex-col justify-start">
+                      <h5 class="mb-2 text-xl font-semibold text-white">
+                        Sites TPF
+                      </h5>
+                      <p class="text-sm text-secondary">
+                        sites.tpfonline.com.au/
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="list-none p-2 md:p-4 w-full sm:w-[50%] lg:w-[33%]">
+                <a
+                  href="dev-club-sugar.tpfonline.com.au"
+                  title="dev-club-sugar.tpfonline.com.au"
+                  target="_blank"
+                  class="block no-underline hover:opacity-90"
+                >
+                  <div
+                    class="px-2 py-4 md:px-4 md:py-6 flex justify-start items-center gap-4 rounded-lg drop-shadow-md md:max-w-xl md:flex-row bg-gradient-to-t from-darkBlue-500 to-darkBlue-100"
+                  >
+                    <img
+                      class="rounded-t-lg md:rounded-none ct-logo-clubs"
+                      src="./public/images/bull-dog.png"
+                      alt="bull dog"
+                    />
+                    <div class="flex flex-col justify-start">
+                      <h5 class="mb-2 text-xl font-semibold text-white">
+                        Bull Dog
+                      </h5>
+                      <p class="text-sm text-secondary">
+                        dev-club-sugar.tpfonline.com.au
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- James -->
+        <div
+          class="!visible px-1 hidden transition-all"
+          id="james-truong-section"
+          data-te-collapse-item
+        >
+          <div
+            class="p-1 block rounded-lg bg-gradient-to-r from-gray-500 to-gray-600 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700 dark:text-neutral-50"
+          >
+            <ul class="flex flex-wrap">
+              <li class="list-none p-2 md:p-4 w-full sm:w-[50%] lg:w-[33%]">
+                <a
+                  href="http://sites.tpfonline.com.au/"
+                  title="http://sites.tpfonline.com.au/"
+                  target="_blank"
+                  class="block no-underline hover:opacity-90"
+                >
+                  <div
+                    class="px-2 py-4 md:px-4 md:py-6 flex justify-start items-center gap-4 rounded-lg drop-shadow-md md:max-w-xl md:flex-row bg-gradient-to-t from-darkBlue-500 to-darkBlue-100"
+                  >
+                    <img
+                      class="rounded-t-lg md:rounded-none ct-logo-clubs"
+                      src="./public/images/mberplus.png"
+                      alt="site tpf"
+                    />
+                    <div class="flex flex-col justify-start">
+                      <h5 class="mb-2 text-xl font-semibold text-white">
+                        Sites TPF
+                      </h5>
+                      <p class="text-sm text-secondary">
+                        sites.tpfonline.com.au/
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="list-none p-2 md:p-4 w-full sm:w-[50%] lg:w-[33%]">
+                <a
+                  href="dev-club-james.tpfonline.com.au"
+                  title="dev-club-james.tpfonline.com.au"
+                  target="_blank"
+                  class="block no-underline hover:opacity-90"
+                >
+                  <div
+                    class="px-2 py-4 md:px-4 md:py-6 flex justify-start items-center gap-4 rounded-lg drop-shadow-md md:max-w-xl md:flex-row bg-gradient-to-t from-darkBlue-500 to-darkBlue-100"
+                  >
+                    <img
+                      class="rounded-t-lg md:rounded-none ct-logo-clubs"
+                      src="./public/images/bull-dog.png"
+                      alt="bull dog"
+                    />
+                    <div class="flex flex-col justify-start">
+                      <h5 class="mb-2 text-xl font-semibold text-white">
+                        Bull Dog
+                      </h5>
+                      <p class="text-sm text-secondary">
+                        dev-club-james.tpfonline.com.au
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Roise -->
+        <div
+          class="!visible px-1 hidden transition-all"
+          id="rosie-ngo-section"
+          data-te-collapse-item
+        >
+          <div
+            class="p-1 block rounded-lg bg-gradient-to-r from-gray-500 to-gray-600 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700 dark:text-neutral-50"
+          >
+            <ul class="flex flex-wrap">
+              <li class="list-none p-2 md:p-4 w-full sm:w-[50%] lg:w-[33%]">
+                <a
+                  href="http://sites.tpfonline.com.au/"
+                  title="http://sites.tpfonline.com.au/"
+                  target="_blank"
+                  class="block no-underline hover:opacity-90"
+                >
+                  <div
+                    class="px-2 py-4 md:px-4 md:py-6 flex justify-start items-center gap-4 rounded-lg drop-shadow-md md:max-w-xl md:flex-row bg-gradient-to-t from-darkBlue-500 to-darkBlue-100"
+                  >
+                    <img
+                      class="rounded-t-lg md:rounded-none ct-logo-clubs"
+                      src="./public/images/mberplus.png"
+                      alt="site tpf"
+                    />
+                    <div class="flex flex-col justify-start">
+                      <h5 class="mb-2 text-xl font-semibold text-white">
+                        Sites TPF
+                      </h5>
+                      <p class="text-sm text-secondary">
+                        sites.tpfonline.com.au/
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </main>
