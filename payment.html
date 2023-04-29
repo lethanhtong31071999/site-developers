@@ -11,10 +11,10 @@
     />
     <link href="./public/main.css" rel="stylesheet" />
 
-    <title>Sites Developer</title>
+    <title>Payment Lunch</title>
   </head>
   <body>
-    <div id="wrapper" class="flex flex-col">
+    <div id="wrapper" class="flex flex-col w-[100vw] overflow-hidden">
       <header id="header">
         <nav
           class="flex justify-between items-center p-6 md:p-8 md:container mx-auto"
@@ -31,7 +31,7 @@
             <li class="mx-2 md:mx-4 hover:scale-105 transition-transform">
               <a
                 href="./index.html"
-                class="text-base sm:text-xl font-bold font-Popin text-white leading-none active"
+                class="text-base sm:text-xl font-bold font-Popin text-white hover:text-ct-orange leading-none"
               >
                 TPF Group
               </a>
@@ -49,7 +49,7 @@
             >
               <a
                 href="./payment.html"
-                class="uppercase hidden md:inline-block px-4 py-2 text-xl font-bold font-Popin text-white hover:text-white hover:bg-ct-orange bg-purple-600 drop-shadow-md hover:scale-105 transition-all duration-300"
+                class="uppercase hidden md:inline-block px-4 py-2 text-xl font-bold font-Popin text-white hover:text-white hover:bg-purple-600 bg-ct-orange drop-shadow-md hover:scale-105 transition-all duration-300"
               >
                 Payment Lunch
               </a>
@@ -69,24 +69,58 @@
             class="text-5xl mb-1 uppercase font-extrabold text-transparent bg-gradient-to-r from-orange-400 to-orange-700"
             style="background-clip: text; -webkit-background-clip: text"
           >
-            Sites Developer
+            Pay for your lunch
           </h1>
           <p class="my-0 text-gray-400">
-            This website contains all page links for Sugar, James, and Roy from
-            clubs to personal projects
+            This is time for paying for your lunch. Let's fill the form below,
+            then it will update automatically for your status
           </p>
         </div>
         <div
           class="mx-auto w-24 h-1 my-12 bg-gradient-to-r from-gray-500 to-gray-400 rounded-full"
         ></div>
-        <!-- Cards -->
-        <ul
-          class="flex flex-wrap items-stretch justify-start p-2 lg:p-1 -mx-4 lg:-mx-6 card-list"
-          id="card-list"
-        ></ul>
 
-        <!-- Collapses -->
-        <div id="collapses"></div>
+        <!-- Form -->
+        <div class="warpper-form mx-auto w-full sm:w-[75%] md:w-[50%]">
+          <form class="bg-gray-800 p-6 rounded-lg shadow-md">
+            <div class="mb-4">
+              <label class="block text-gray-300 font-bold mb-2" for="name">
+                Name
+                <span class="text-xs text-secondary ml-2">
+                  (Name is similar to the name in the excel sheet)
+                </span>
+              </label>
+              <input
+                class="capitalize shadow appearance-none border rounded w-full py-2 px-3 text-gray-300 leading-tight bg-gray-700 focus:outline-none focus:shadow-outline"
+                id="name"
+                type="text"
+                placeholder="Roy Le"
+              />
+            </div>
+            <div class="mb-4">
+              <label
+                class="block text-gray-300 font-bold mb-2"
+                for="order-date"
+              >
+                Order Date
+              </label>
+              <input
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-300 leading-tight bg-gray-700 focus:outline-none focus:shadow-outline"
+                id="order-date"
+                type="date"
+                placeholder="Cơm sườn nướng / Com suon nuong"
+              />
+            </div>
+            <div class="flex items-center justify-center">
+              <a
+                href="/pro"
+                class="w-[50%] text-center font-Popin uppercase text-base font-normal text-green-500 border-green-400 border rounded-md px-2 py-1 hover:drop-shadow-[0_0_9px_rgba(34,197,94,0.9)] hover:text-white hover:bg-green-700 transition-all"
+              >
+                Order Now
+              </a>
+            </div>
+          </form>
+        </div>
       </main>
       <!-- Footer -->
       <footer id="footer">
@@ -98,7 +132,7 @@
             Find an issue with this page?
             <a
               class="text-blue-500"
-              href="https://github.com/fireship-io/fireship.io/tree/master/content/"
+              href="https://github.com/lethanhtong31071999"
               >Fix it on GitHub</a
             >
           </div>
@@ -156,7 +190,7 @@
             <a href="./microservices" title="Microservice Projects">
               Microservices
             </a>
-            | <a href="./payment" title="Payment Lunch">Payment Lunch</a> |
+            | <a href="./payment.html" title="Payment Lunch">Payment Lunch</a> |
             <a href="./contact" title="Contact Me">Contact</a> |
           </div>
 

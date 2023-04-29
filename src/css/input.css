@@ -22,3 +22,7 @@ header nav .active {
 .ct-logo-clubs {
   @apply w-[100px] aspect-square object-cover object-center;
 }
+
+#main {
+  @apply overflow-hidden w-[100vw];
+}
