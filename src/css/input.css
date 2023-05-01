@@ -3,6 +3,10 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  @apply font-Popin;
+}
+
 body {
   @apply min-h-screen bg-gradient-to-t from-darkBlue-500 to-darkBlue-100;
 }
