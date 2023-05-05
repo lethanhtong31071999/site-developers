@@ -8,7 +8,8 @@
   "main": "tailwind.config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:css": "tailwindcss -i ./src/css/input.css -o ./public/main.css --watch"
+    "build:css": "tailwindcss -i ./src/css/input.css -o ./public/main.css --watch",
+    "build:css:min": "npx tailwindcss -i ./src/css/input.css -o ./public/main.css --minify"
   },
   "author": "",
   "license": "ISC",
